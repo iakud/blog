@@ -1,5 +1,5 @@
 baseURL = "https://blog.iakud.com/"
-title = "凯的Blog"
+title = "凯的BLOG"
 paginate = 5
 theme = "PaperMod"
 
@@ -49,8 +49,8 @@ apple_touch_icon = "<link / abs url>"
 safari_pinned_tab = "<link / abs url>"
 
 [params.label]
-text = "凯的Blog"
-icon = "/apple-touch-icon.png"
+text = "Home"
+icon = "/favicon.png"
 iconHeight = 35
 
 # profile-mode
@@ -97,10 +97,10 @@ hidden = true # hide everywhere but not in structured data
 hiddenInList = true # hide on list pages and home
 hiddenInSingle = true # hide on single page
 
-[params.editPost]
-URL = "https://github.com/iakud/blog/content"
-Text = "Suggest Changes" # edit text
-appendFilePath = true # to append file path to Edit link
+# [params.editPost]
+# URL = "https://github.com/iakud/blog/content"
+# Text = "Suggest Changes" # edit text
+# appendFilePath = true # to append file path to Edit link
 
 # for search
 # https://fusejs.io/api/options.html
