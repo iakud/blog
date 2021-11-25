@@ -2,6 +2,3 @@
 	path = public
 	url = https://github.com/iakud/iakud.github.io.git
 	branch = master
-[submodule "themes/PaperMod"]
-	path = themes/PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git
