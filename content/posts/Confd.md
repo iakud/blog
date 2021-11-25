@@ -30,7 +30,6 @@ vim /etc/confd/conf.d/nginx.toml
 内容为如下，其中`nginx.conf.tmpl`文件为`confd`的模板文件，`keys`为模板渲染成配置文件所需的配置内容，`/usr/local/nginx/conf/nginx.conf`为生成的配置文件
 
 ```toml
-{%- raw -%}
 [template]
 src = "nginx.conf.tmpl"
 dest = "/usr/local/nginx/conf/nginx.conf"
@@ -39,7 +38,6 @@ keys = [
 ]
 check_cmd = "/usr/local/nginx/sbin/nginx -t -c {{ .src }}"
 reload_cmd = "/usr/local/nginx/sbin/nginx -s reload"
-{% endraw %}
 ```
 
 ##### 3、创建模板文件
@@ -55,12 +53,10 @@ vim /etc/confd/templates/nginx.conf.tmpl
 
 ```ini
 ...
-{%- raw -%}
 {{- $data := json(getv "/nginx/conf")}}
 {{- range $data.blackList}}
 deny {{.}};
 {{- end}}
-{% endraw %}
 ...
 ```
 
